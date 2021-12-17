@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './player.css';
-import Card from './card';
 
-// Basketball
+//Components
+import Card from './Card';
 
-const baseballPayload = [
+// Baseball
+const baseballInfo = [
     {
         name: 'Randy Johnson',
         team: 'Mariners',
@@ -22,9 +23,9 @@ const baseballPayload = [
     },
 ];
 
-const displayBaseballPlayers = baseballPayload.map((player, idx) => {
+const baseballCards = baseballInfo.map((player, idx) => {
     return (
-        <Card key={idx} index={idx} name={player.name} team={player.team} />  
+        <Card key={idx} name={player.name} team={player.team} about={player.about}/>  
     );
 });
 
@@ -34,7 +35,7 @@ class Player extends Component {
     render() {
       return (
         <div>
-            <Card key={idx} index={idx} name={player.name} team={player.team} />  
+            <Card key={index} name={player.name} team={player.team} about={player.about}/>  
         </div>
       );
     }
