@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './Player';
 
 function App() {
   return (

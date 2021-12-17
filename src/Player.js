@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import './player.css';
+import Card from './card';
 
 // Basketball
 
@@ -6,58 +8,36 @@ const baseballPayload = [
     {
         name: 'Randy Johnson',
         team: 'Mariners',
+        about: 'Player for the mariners in the 90s',
     },
     {
         name: 'Ken Griffy Jr.',
         team: 'Mariners',
+        about: 'Player for the mariners in the 90s',
     },
     {
         name: 'King Felix',
         team: 'Mariners',
+        about: 'Player for the mariners in the 90s',
     },
-
 ];
 
 const displayBaseballPlayers = baseballPayload.map((player, idx) => {
     return (
-        <div key={idx}>
-            <h1>Name {player.name}</h1>
-            <p> Team {player.team}</p>
-        </div>
+        <Card key={idx} index={idx} name={player.name} team={player.team} />  
     );
 });
 
-// // will be an array of all players on Team 4
-// const searchTeam4 = bballPayload.filter((player, idx) => {
-//     if (player.team === 'Team 4') {
-//         return true;
-//     } else {
-//         return false;
-//     }
-// });
-
-// const displayTeam4 = searchTeam4.map((player, idx) => {
-//     return (
-//         <div key={idx}>
-//             <h1>Player {player.name}</h1>
-//             <p>Team {player.team}</p>
-//         </div>
-//     )
-// });
-
-class Basketball extends Component {
+ 
+  
+class Player extends Component {
     render() {
-        return (
-            <div>
-                <h1>Basketball</h1>
-                <div>
-                    <h1>{basketPlayer.name}</h1>
-                    <p>{basketPlayer.team}</p>
-                </div>
-                {displayBasketballPlayers}
-            </div>
-        )
+      return (
+        <div>
+            <Card key={idx} index={idx} name={player.name} team={player.team} />  
+        </div>
+      );
     }
-}
-
-export default Basketball;
+  }
+  
+  export default Player;
