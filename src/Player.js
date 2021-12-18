@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import './player.css';
 
-//Components
-import Card from './Card';
-
 // Baseball
 const baseballInfo = [
     {
@@ -30,15 +27,38 @@ const baseballCards = baseballInfo.map((player, idx) => {
 });
 
  
-  
-class Player extends Component {
+class Card extends Component {
     render() {
       return (
         <div>
-            <Card key={index} name={player.name} team={player.team} about={player.about}/>  
+            {/* <Card key={index} name={player.name} team={player.team} about={player.about}/>   */}
+            <div className="post" >
+                <div className="card" key={this.props.idx}>
+                    <div className="card-image">
+                        <figure className="image is-2by1">
+                            <img src="https://images.pexels.com/photos/167635/pexels-photo-167635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+                        </figure>
+                    </div> 
+                    <div className="card-content">
+                        <div className="media">
+                            <div className="media-content">
+
+                                <p className="title is-4">{this.props.name}</p>
+                                <p className="subtitle is-6">{this.props.team}</p>
+                               
+                            </div>
+                        </div>
+
+                        <div className="content">
+                        <p className="subtitle is-6">{this.props.about}</p>
+                        </div>
+                    </div>
+                </div>
+                {baseballCards}
+            </div>
         </div>
       );
     }
   }
   
-  export default Player;
+  export default Card;
