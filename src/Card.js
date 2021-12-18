@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './player.css';
+import './card.css';
 
 // Baseball
 const baseballInfo = [
@@ -20,18 +20,12 @@ const baseballInfo = [
     },
 ];
 
-const baseballCards = baseballInfo.map((player, idx) => {
-    return (
-        <Card key={idx} name={player.name} team={player.team} about={player.about}/>  
-    );
-});
 
- 
+
 class Card extends Component {
     render() {
       return (
         <div>
-            {/* <Card key={index} name={player.name} team={player.team} about={player.about}/>   */}
             <div className="post" >
                 <div className="card" key={this.props.idx}>
                     <div className="card-image">
@@ -42,10 +36,8 @@ class Card extends Component {
                     <div className="card-content">
                         <div className="media">
                             <div className="media-content">
-
                                 <p className="title is-4">{this.props.name}</p>
                                 <p className="subtitle is-6">{this.props.team}</p>
-                               
                             </div>
                         </div>
 
@@ -54,11 +46,18 @@ class Card extends Component {
                         </div>
                     </div>
                 </div>
-                {baseballCards}
+                {/* {baseballCards} */}
             </div>
         </div>
       );
     }
   }
+
+// const baseballCards = baseballInfo.map((player, idx) => {
+//     return (
+//         <Card key={idx} name={player.name} team={player.team} about={player.about}/>  
+//     );
+// });
   
+
   export default Card;
