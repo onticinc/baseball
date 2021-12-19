@@ -46,18 +46,18 @@ class Card extends Component {
                         </div>
                     </div>
                 </div>
-                {/* {baseballCards} */}
+                {baseballCards}
             </div>
         </div>
       );
     }
   }
-
-// const baseballCards = baseballInfo.map((player, idx) => {
-//     return (
-//         <Card key={idx} name={player.name} team={player.team} about={player.about}/>  
-//     );
-// });
+  
+const baseballCards = baseballInfo.map((player, idx) => {
+    return (
+        <Card key={idx} name={player.name} team={player.team} about={player.about}/>  
+    );
+});
   
 
   export default Card;

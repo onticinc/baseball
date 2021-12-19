@@ -1,16 +1,35 @@
-import logo from './logo.svg'
 import './App.css';
 import Card from './Card';
+// import Equipment from './Equipment';
+import React from 'react';
+
+// Equipment
+const equipmentInfo = [
+  {
+      name: 'Bat',
+      description: '',
+      belongsTo: 'Player for the mariners in the 90s',
+  },
+  {
+      name: 'Ken Griffy Jr.',
+      team: 'Mariners',
+      about: 'Player for the mariners in the 90s',
+  },
+  {
+      name: 'King Felix',
+      team: 'Mariners',
+      about: 'Player for the mariners in the 90s',
+  },
+];
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Card />
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+
       </header>
     </div>
   );
