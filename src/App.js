@@ -1,5 +1,5 @@
-import './css/App.css';
-import Card from './components/Card';
+import './App.css';
+import Card from './Card';
 // import Equipment from './Equipment';
 import React from 'react';
 
