@@ -43,7 +43,7 @@ class Card extends Component {
                     </div>
                 </div>
             </div>
-            {baseballCards}
+            {Card}
         </div>
       );
     }
