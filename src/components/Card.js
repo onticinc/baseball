@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './card.css';
+import '../css/Card.css';
 
 // Baseball
 const baseballInfo = [

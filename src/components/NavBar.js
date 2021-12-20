@@ -66,13 +66,6 @@ class NavBar extends Component {
     }
 }
 
-// const baseballCards = baseballInfo.map((player, idx) => {
-//     return (
-//         <Card key={idx} name={player.name} team={player.team} about={player.about} />
-//     );
-// });
-
-
 export default NavBar;
 
 
