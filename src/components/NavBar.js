@@ -1,27 +1,8 @@
 
 import React, { Component } from 'react';
-import './card.css';
+import './navbar.css';
 
-// Baseball
-const baseballInfo = [
-    {
-        name: 'Randy Johnson',
-        team: 'Mariners',
-        about: 'Player for the mariners in the 90s',
-    },
-    {
-        name: 'Ken Griffy Jr.',
-        team: 'Mariners',
-        about: 'Player for the mariners in the 90s',
-    },
-    {
-        name: 'King Felix',
-        team: 'Mariners',
-        about: 'Player for the mariners in the 90s',
-    },
-];
-
-class Card extends Component {
+class NavBar extends Component {
     render() {
         return (
             <div>
@@ -85,14 +66,14 @@ class Card extends Component {
     }
 }
 
-const baseballCards = baseballInfo.map((player, idx) => {
-    return (
-        <Card key={idx} name={player.name} team={player.team} about={player.about} />
-    );
-});
+// const baseballCards = baseballInfo.map((player, idx) => {
+//     return (
+//         <Card key={idx} name={player.name} team={player.team} about={player.about} />
+//     );
+// });
 
 
-export default Card;
+export default NavBar;
 
 
 

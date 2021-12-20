@@ -24,7 +24,7 @@ class Card extends Component {
     render() {
       return (
         <div>
-            <div className="post" >
+             <div className="post" >  {/* is this necessary? */}
                 <div className="card" key={this.props.idx}>
                     <div className="card-image">
                         <figure className="image is-2by1">
