@@ -20,8 +20,6 @@ const baseballInfo = [
     },
 ];
 
-
-
 class Card extends Component {
     render() {
       return (
@@ -60,4 +58,4 @@ const baseballCards = baseballInfo.map((player, idx) => {
 });
   
 
-  export default Card;
+export default Card;
